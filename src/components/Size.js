@@ -16,7 +16,7 @@ class RamStorage extends Component {
         return (
             <div className="Spec-container">
                 {this.props.specs.map((spec, i) => (<div className="color-box spec-box" key={i}
-                    onClick={() => this.setState({ choice: i })} onKeyPress={(e) => (e.key == "Enter" || e.key == " ") && this.setState({ choice: i })} style={{ backgroundColor: i == this.state.choice ? "grey" : "transparent" }} tabIndex="0">
+                    onClick={() => this.setState({ choice: i })} style={{ backgroundColor: i == this.state.choice ? "grey" : "transparent" }} tabIndex="0" onKeyPress={(e) => (e.key == "Enter" || e.key == " ") && this.setState({ choice: i })}>
                     <div className="color-circle size-circle" style={{ backgroundColor: "black" }}>{spec.ram}</div>
                     <div>{spec.storage}</div>
                 </div>))}
