@@ -21,6 +21,7 @@ class ProductView extends Component {
                     <p>{this.props.product.shortDetail}</p>
                     <b><p>{this.props.product.specialOffer}</p></b>
                     <Color colors={["red", "blue", "black", "purple", "pink"]} color="blue" />
+                    <hr />
                     <RamStorage specs={[{ ram: "8 GB", storage: "32 GB" }, { ram: "4 GB", storage: "32 GB" }, { ram: "16 GB", storage: "64 GB" }]}></RamStorage>
                 </div>
             </div>

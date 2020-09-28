@@ -85,7 +85,6 @@ div.color-container,
 div.Spec-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, 20vmin);
-  grid-template-rows: repeat(auto-fit, 20vmin);
 }
 .color-box {
   display: grid;
@@ -94,6 +93,8 @@ div.Spec-container {
   align-items: center;
   justify-items: center;
   padding: 2vmin;
+  height: 20vmin;
+  box-sizing: border-box;
 }
 div.accordian-header {
   display: grid;
@@ -159,4 +160,7 @@ div#product-view-right * {
 }
 div#product-view-descriptive > * {
   padding-bottom: 2vw;
+}
+hr {
+  width: 90%;
 }
